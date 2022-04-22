@@ -15,6 +15,7 @@
     --bgColorTransparent: rgba(255, 255, 255, 0.6);
     --headingColor: hsl(var(--hue1), 61%, 24%);
     --textColor: hsl(var(--hue1), 17%, 63%);
+    --sectionPadding: 7rem;
 }
 
 /* ---------- General Styles ---------- */
@@ -86,6 +87,8 @@ ul {
     color: var(--textColor);
     font-size: 0.9rem;
     margin: 2rem 0;
+    line-height: 2;
+    text-align: justify;
 }
 
 /* ---------- Navbar Styling ---------- */
@@ -121,6 +124,10 @@ header.scrolled .logo {
     line-height: 80px;
 }
 
+.logoPartTwo {
+    color: var(--mainColor1);
+}
+
 .links {
     display: flex;
     flex: 1;
@@ -131,10 +138,6 @@ header.scrolled .logo {
     display: flex;
     align-items: center;
     width: 100%;
-}
-
-section {
-    height: 1000px;
 }
 
 .nav-link {
@@ -203,8 +206,8 @@ section {
 
 .showCaseArea .container {
     display: grid;
-    grid-template-columns: 1fr 550px;
-    height: calc(100vh - 120px);
+    grid-template-columns: 1fr 500px;
+    height: calc(90vh - 120px);
     max-height: 600px;
     align-items: center;
 }
@@ -241,5 +244,29 @@ section {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 0 0 80px 80px;
+    border-radius: 0 0 60px 60px;
+}
+
+.sectionBiography {
+    margin-top: 120px;
+}
+
+.section {
+    position: relative;
+    padding: var(--sectionPadding) 0;
+}
+
+.biography .container {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+}
+
+.biography .text {
+    margin: 1rem  0 1rem;
+}
+
+@media (max-height: 620px) {
+    .text {
+        color: red;
+    }
 }
