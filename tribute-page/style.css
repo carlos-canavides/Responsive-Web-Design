@@ -248,7 +248,7 @@ header.scrolled .logo {
 }
 
 .sectionBiography {
-    margin-top: 120px;
+    margin-top: 0px;
 }
 
 .section {
@@ -257,8 +257,45 @@ header.scrolled .logo {
 }
 
 .biography .container {
+    align-items: center;
+}
+
+.biographyGrid {
     display: grid;
-    grid-template-columns: 1.05fr 1fr;
+    grid-template-columns: 190px 190px;
+    grid-template-rows: 190px, 190px;
+    column-gap: 2rem;
+    row-gap: 4rem;
+    margin-right: 2rem;
+}
+
+.biographyCard {
+    background-color: var(--bgColor2);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.biographyCard:nth-child(1) {
+    border-radius: 40px 40px 5px 40px;
+}
+
+.biographyCard:nth-child(2) {
+    margin-top: 50px;
+    border-radius: 40px 40px 40px 5px;
+}
+
+.biographyCard:nth-child(3) {
+    margin-top: -50px;
+    border-radius: 40px 5px 40px 40px;
+}
+
+.biographyCard:nth-child(4) {
+    border-radius: 5px 40px 40px 40px;
 }
 
 .biography .text {
