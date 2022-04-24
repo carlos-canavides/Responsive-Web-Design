@@ -248,7 +248,7 @@ header.scrolled .logo {
 }
 
 .sectionBiography {
-    margin-top: 0px;
+    margin-top: 50px;
 }
 
 .section {
@@ -260,46 +260,25 @@ header.scrolled .logo {
     align-items: center;
 }
 
-.biographyGrid {
+.careerResearchComponent {
     display: grid;
-    grid-template-columns: 190px 190px;
-    grid-template-rows: 190px, 190px;
-    column-gap: 2rem;
-    row-gap: 4rem;
-    margin-right: 2rem;
+    grid-template-columns: 0.5fr 1fr;
 }
 
-.biographyCard {
-    background-color: var(--bgColor2);
+.containerCard {
     width: 100%;
     height: 100%;
-    justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.careerResearchCard {
+    background-color: var(--bgColor2);
+    width: 200px;
+    height: 200px;
     cursor: pointer;
-}
-
-.biographyCard:nth-child(1) {
-    border-radius: 40px 40px 5px 40px;
-}
-
-.biographyCard:nth-child(2) {
-    margin-top: 50px;
     border-radius: 40px 40px 40px 5px;
-}
-
-.biographyCard:nth-child(3) {
-    margin-top: -50px;
-    border-radius: 40px 5px 40px 40px;
-}
-
-.biographyCard:nth-child(4) {
-    border-radius: 5px 40px 40px 40px;
-}
-
-.biography .text {
-    margin: 1rem  0 1rem;
 }
 
 @media (max-height: 620px) {
