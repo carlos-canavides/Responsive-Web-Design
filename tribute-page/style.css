@@ -273,10 +273,9 @@ header.scrolled .logo {
     justify-content: center;
 }
 
-.careerResearchCard {
-    background-color: var(--bgColor2);
+.containerCard img {
     width: 200px;
-    height: 200px;
+    height: 230px;
     cursor: pointer;
     border-radius: 40px 40px 40px 5px;
 }
