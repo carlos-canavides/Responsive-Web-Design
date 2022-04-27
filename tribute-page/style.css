@@ -370,13 +370,6 @@ header.scrolled .logo {
     right: 0;
 }
 
-@keyframes fade {
-    50% {
-      left: 60%;
-      opacity: 0.1%;
-    }
-}
-
 .footer {
     background-color: var(--mainColor1);
     padding: 1rem;
@@ -394,19 +387,6 @@ blockquote {
     text-align: center;
     margin-bottom: 1rem;
 }
-  
-@media (min-width: 1400px) {
-    blockquote {
-      font-size: 3rem;
-    }
-}
-
-@media (max-height: 620px) {
-    .text {
-        color: red;
-    }
-}
-
 
 /* ---------- 1000px Screens ---------- */
 
@@ -459,5 +439,70 @@ blockquote {
 
     .cite a {
         font-size: 1rem;
+    }
+}
+
+
+/* ---------- 768px Screens ---------- */
+
+@media (max-width: 768px) {
+    :root {
+        --sectionPadding: 4.5rem;
+    }
+
+    .subHeading {
+        font-size: 0.8rem;
+    }
+
+    .showCaseArea .container {
+        grid-template-columns: 1fr;
+        height: revert;
+        justify-items: center;
+        row-gap: 3rem;
+    }
+
+    .showCaseImage {
+        min-height: revert;
+        height: 100vw;
+        max-height: 570px;
+        max-width: 450px;
+        margin-top: 0;
+        border-radius: 40px;
+    }
+
+    .showCaseInfo {
+        width: 100%;
+        margin-top: 1rem;
+        margin-right: 0;
+    }
+
+    .showCaseArea .text {
+        margin: 0.2rem 0;
+    }
+
+    .sectionCareerResearch .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .careerResearchComponent {
+        grid-template-columns: 1fr;
+    }
+
+    .careerResearchInfo {
+        order: 0;
+    }
+
+    .containerCard {
+        order: 1;
+    }
+
+    .containerCard img {
+        width: 300px;
+        height: 320px;
+        cursor: pointer;
+        border-radius: 40px 40px 40px 5px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
 }
