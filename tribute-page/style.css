@@ -265,10 +265,6 @@ header.scrolled .logo {
     margin-bottom: 0.7 rem;
 }
 
-.showCaseArea .heading {
-    font-size: 3rem;
-}
-
 .showCaseArea .text {
     margin: 0.8rem 0;
     text-align: justify;
@@ -439,6 +435,19 @@ blockquote {
 
     .cite a {
         font-size: 1rem;
+    }
+}
+
+/* ---------- 807px Screens ---------- */
+
+@media (max-width: 807px) {
+    .showCaseArea .container {
+        grid-template-columns: 1fr 400px;
+        height: 500px;
+    }
+
+    .heading {
+        font-size: 1.8rem;
     }
 }
 
