@@ -1,21 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* ---------- Website Theme ---------- */
 
 :root {
     --hue1: 257;
     --hue2: 47;
-    --backgroundColor: hsl(var(--hue1), 100%, 97%);
     --mainColor1: hsl(var(--hue1), 100%, 60%);
     --mainColorDark1: hsl(var(--hue1), 69%, 50%);
     --mainColor2: hsl(var(--hue2), 100%, 61%);
     --mainColorDark2: hsl(var(--hue2), 82%, 55%);
+    --sectionPadding: 7rem;
+}
+
+body {
+    --backgroundColor: hsl(var(--hue1), 100%, 97%);
     --bgColor1: hsl(var(--hue1), 100%, 97%);
     --bgColor2: #fff;
     --bgColor3: hsl(var(--hue1), 100%, 98%);
     --bgColorTransparent: rgba(255, 255, 255, 0.6);
     --headingColor: hsl(var(--hue1), 61%, 24%);
     --textColor: hsl(var(--hue1), 17%, 63%);
-    --sectionPadding: 7rem;
+}
+
+body.dark {
+    --backgroundColor: hsl(var(--hue1), 19%, 15%);
+    --bgColor1: hsl(var(--hue1), 21%, 11%);
+    --bgColor2: hsl(var(--hue1), 23%, 19%);
+    --bgColor3: hsl(var(--hue1), 23%, 24%);
+    --bgColorTransparent: hsl(var(--hue1), 23%, 19%, 0.6);
+    --headingColor: hsl(var(--hue1), 100%, 95%);
+    --textColor: hsl(var(--hue1), 14%, 51%);
+}
+
+body.dark .toggle-btn {
+    background-color: var(--bgColor3);
+}
+
+body.dark .toggle-btn:hover {
+    background-color: brightness(110%);
 }
 
 /* ---------- General Styles ---------- */
@@ -348,7 +374,7 @@ header.scrolled .logo {
       left: 60%;
       opacity: 0.1%;
     }
-  }
+}
 
 .footer {
     background-color: var(--mainColor1);
