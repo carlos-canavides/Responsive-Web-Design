@@ -257,7 +257,7 @@ header.scrolled .logo {
     display: grid;
     grid-template-columns: 1fr 500px;
     height: calc(90vh - 120px);
-    max-height: 600px;
+    height: 600px;
     align-items: center;
 }
 
@@ -404,5 +404,60 @@ blockquote {
 @media (max-height: 620px) {
     .text {
         color: red;
+    }
+}
+
+
+/* ---------- 1000px Screens ---------- */
+
+@media (max-width: 1000px) {
+    .subHeading {
+        font-size: 0.75rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .subHeadingItem {
+        font-size: 0.7rem;
+    }
+
+    .subTitle {
+        font-size: 0.8rem;
+    }
+
+    .text {
+        font-size: 0.84rem;
+        margin: 1.3rem 0;
+    }
+
+    .logo {
+        font-size: 1.45rem;
+    }
+
+    .nav-link {
+        font-size: 0.7rem;
+    }
+
+    .showCaseArea {
+        padding: 100px 0;
+    }
+
+    .showCaseArea .container {
+        grid-template-columns: 1fr 400px;
+        height: 430px;
+    }
+
+    blockquote {
+        font-size: 1.5rem;
+    }
+
+    .cite {
+        padding: 2rem;
+    }
+
+    .cite a {
+        font-size: 1rem;
     }
 }
