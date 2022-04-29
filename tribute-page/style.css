@@ -9,9 +9,9 @@ html {
 :root {
     --hue1: 257;
     --hue2: 47;
-    --mainColor1: hsl(var(--hue1), 100%, 60%);
+    --mainColor1:hsl(352, 50%, 50%);
     --mainColorDark1: hsl(var(--hue1), 69%, 50%);
-    --mainColor2: hsl(var(--hue2), 100%, 61%);
+    --mainColor2:hsl(var(--hue2), 100%, 61%);
     --mainColorDark2: hsl(var(--hue2), 82%, 55%);
     --sectionPadding: 7rem;
 }
