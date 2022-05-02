@@ -1,0 +1,36 @@
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 75rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerInfo div {
+    text-align: justify;
+}
+
+.headerImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#imgSurvey {
+    width: 400px;
+    height: 350px;
+}

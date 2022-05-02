@@ -1,19 +1,18 @@
 const header = document.querySelector("header");
 const toggleBtn = document.querySelector(".toggle-btn");
 
-/* ---------- Stichy Navbar ---------- */
+/* ---------------------- Stichy Navbar ----------------------- */
 
 function stickyNavbar() {
     header.classList.toggle("scrolled", window.pageYOffset > 0);
 }
-
 stickyNavbar();
-
 window.addEventListener("scroll", stickyNavbar);
+
+/* ------------------ DarkMode and LightMode ------------------ */
 
 let firstTheme = localStorage.getItem("dark");
 changeTheme(+firstTheme);
-
 function changeTheme(isDark) {
     if(isDark) {
         document.body.classList.add("dark");
@@ -26,7 +25,6 @@ function changeTheme(isDark) {
         localStorage.setItem("dark", 0);
     }
 }
-
 toggleBtn.addEventListener("click", () => {
     changeTheme(!document.body.classList.contains("dark"))
 });
