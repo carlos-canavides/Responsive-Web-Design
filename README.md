@@ -8,7 +8,7 @@ The objective of these projects is to put into practice the acquired knowledge o
 
 <br>
 
-* Tribute Page: [Page](https://codepen.io/carlosJCs/pen/vYdBgpb) | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
+* Tribute Page: <a href="https://codepen.io/carlosJCs/pen/vYdBgpb" target="_blank">Page</a> | <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page" target="_blank">Requirements</a>
 
 * Survey Form: [Page]() | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
 

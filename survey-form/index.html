@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Survey Form</title>
+    <link rel="icon" type="image/png" href="./images/surveyIcon.png" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
@@ -20,6 +21,51 @@
                 <img id="imgSurvey" src="./images/survey.png" alt="Survey Form Image">
             </div>
         </header>
+
+        <form id="survey-form">
+            <div class="field">
+                <label id="labelName" for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required/>
+            </div>
+            <div class="field">
+                <label id="label" for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Enter your email" required/>
+            </div>
+            <div class="field">
+                <label id="label" for="age">Age:</label>
+                <input type="text" name="age" id="age" placeholder="Enter your age" required/>
+            </div>
+            <div class="field">
+                <label id="label" for="phoneNumber">Phone Number:</label>
+                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter your phone number" required/>
+            </div>
+
+            <div class="field">
+                <p>Employment Status</p>
+                <select id="" name="" class="" required>
+                  <option disabled selected value>Select your current status</option>
+                  <option value="student">Student</option>
+                  <option value="job-part">Employed Part Time</option>
+                  <option value="job-full">Employed Full Time</option>
+                  <option value="self-employed">Freelancer</option>
+                  <option value="unemployed">Unemployed</option>
+                  <option value="retired">Retired</option>
+                  <option value="other">Other</option>
+                </select>
+            </div>
+              
+            <div class="field">
+                <p>Experience Level</p>
+                <select id="experience" name="experience" class="" required>
+                  <option disabled selected value>Select your experience level</option>
+                  <option value="junior">Junior</option>
+                  <option value="mid">Semi Senior</option>
+                  <option value="senior">Senior</option>
+                  <option value="other">Other</option>
+                </select>
+            </div>
+        </form>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
