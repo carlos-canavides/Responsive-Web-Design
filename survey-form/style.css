@@ -20,6 +20,10 @@ body {
     color: black;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ------------------------ Header Styling ------------------------ */
 
 header {
@@ -42,6 +46,7 @@ header {
 #title {
     font-size: 2.5rem;
     font-weight: 600;
+    color: #385395;
 }
 
 .headerImage {
@@ -100,4 +105,48 @@ label {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
+}
+
+.submitButton {
+    display: inline-block;
+    width: 7rem;
+    padding: 0.7rem;
+    background: #385395;
+    color: #fff;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    border: 1px solid #D7E1F0;
+}
+
+/* ------------------------ Footer Styling ------------------------ */
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    font-weight: 570;
+}
+
+.footer a {
+    color: black;
+    padding-left: 10px;
+}
+
+.animatedBorderFooter {
+    position: relative;
+}
+
+.animatedBorderFooter:after {
+    content: "";
+    position: absolute;
+    border-left: 5px solid #E3598E;
+    bottom: 0;
+    left: 0;
+    top: 100%;
+    transition: all 500ms;
+}
+
+.animatedBorderFooter:hover:after {
+    top: 0;
 }
