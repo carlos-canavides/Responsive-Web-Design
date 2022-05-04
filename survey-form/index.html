@@ -7,6 +7,9 @@
     <link rel="icon" type="image/png" href="./images/surveyIcon.png" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -25,19 +28,19 @@
         <form id="survey-form">
             <div class="field">
                 <label id="labelName" for="name">Name:</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name" required/>
+                <input type="text" name="name" id="name" placeholder="Enter your name" class="inputPersonalData" required/>
             </div>
             <div class="field">
                 <label id="label" for="email">Email:</label>
-                <input type="text" name="email" id="email" placeholder="Enter your email" required/>
+                <input type="text" name="email" id="email" placeholder="Enter your email" class="inputPersonalData" required/>
             </div>
             <div class="field">
                 <label id="label" for="age">Age:</label>
-                <input type="text" name="age" id="age" placeholder="Enter your age" required/>
+                <input type="text" name="age" id="age" placeholder="Enter your age" class="inputPersonalData" required/>
             </div>
             <div class="field">
                 <label id="label" for="phoneNumber">Phone Number:</label>
-                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter your phone number" required/>
+                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter your phone number" class="inputPersonalData" required/>
             </div>
 
             <div class="field">
@@ -63,6 +66,74 @@
                   <option value="senior">Senior</option>
                   <option value="other">Other</option>
                 </select>
+            </div>
+
+            <div class="field">
+                <p>How useful were the course materials (readings, videos, assignments, etc)?</p>
+                <label>
+                    <input name="rate" value="extremely" type="radio" class="radio"/>
+                    Extremely useful
+                </label>
+                <label>
+                    <input name="rate" value="very" type="radio" class="radio"/>
+                    Very useful
+                </label>
+                <label>
+                    <input name="rate" value="somewhat" type="radio" class="radio"/>
+                    Somewhat useful
+                </label>
+                <label>
+                    <input name="rate" value="notSo" type="radio" class="radio"/>
+                    Not so useful
+                </label>
+                <label>
+                    <input name="rate" value="no" type="radio" class="radio"/>
+                    No useful at all
+                </label>
+            </div>
+              
+            <div class="field">
+                <p>Would you recommend the course to a friend?</p>
+                <label>
+                    <input name="recommend" value="definitely" type="radio" class="radio"/>
+                    Definitely
+                </label>
+                <label>
+                    <input name="recommend" value="maybe" type="radio" class="radio"/>
+                    Maybe
+                </label>
+                <label>
+                    <input name="recommend" value="not-sure" type="radio" class="radio"/>
+                    Not sure
+                </label>
+            </div>
+          
+            <div class="field">
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <label>
+                  <input name="prefer" value="lectures" type="checkbox" class="checkbox"/>
+                  Lectures and videos
+                </label>
+                <label>
+                  <input name="prefer" value="material" type="checkbox" class="checkbox"/>
+                  Instructional materials
+                </label>
+                <label>
+                    <input name="prefer" value="assignments" type="checkbox" class="checkbox"/>
+                    Course assignments and projects
+                </label>
+                <label>
+                    <input name="prefer" value="exams" type="checkbox" class="checkbox"/>
+                    Graded assignments and exams
+                </label>
+                <label>
+                    <input name="prefer" value="forum" type="checkbox" class="checkbox"/>
+                    Forum
+                </label>
+                <label>
+                    <input name="prefer" value="additional-courses" type="checkbox" class="checkbox"/>
+                    Additional Courses
+                </label>
             </div>
         </form>
     </div>

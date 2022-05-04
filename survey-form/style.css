@@ -1,6 +1,9 @@
+
+/* ------------------------ General Styling ------------------------ */
+
 * {
-  box-sizing: border-box;
-}
+    box-sizing: border-box;
+  }
 
 .container {
     position: relative;
@@ -12,25 +15,16 @@
 
 body {
     background-color: hsl(257, 100%, 97%);
-}
-
-.field {
-    margin: 1rem;
-    padding: 0.5rem;
-}
-
-input {
-    margin: 0;
-    display: block;
-    width: 100%;
-    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    color: black;
 }
 
 /* ------------------------ Header Styling ------------------------ */
 
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.7fr;
     align-items: center;
     justify-content: center;
 }
@@ -43,6 +37,11 @@ header {
 
 .headerInfo div {
     text-align: justify;
+}
+
+#title {
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 .headerImage {
@@ -60,8 +59,45 @@ header {
 /* ------------------------ Form Styling ------------------------ */
 
 form {
-    margin: 2.5rem;
+    margin: 4rem 7.2rem;
+    padding: 0.5rem;
     border-radius: 0.5rem;
-    box-shadow: 0rem, 0rem, 3rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.1);
     background-color: white;
+}
+
+.field {
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.inputPersonalData {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.2rem;
+}
+
+select {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+
+    font-size: 0.95rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.2rem;
+    color: #585e64;
+}
+
+.radio, .checkbox {
+  display: inline-block;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
 }
