@@ -97,14 +97,56 @@ select {
     color: #585e64;
 }
 
-.radio, .checkbox {
-  display: inline-block;
+.checkbox {
+    display: inline-block;
+    margin-right: 0.5rem;
+    min-height: 0.95rem;
+    min-width: 0.95rem;
+    margin-bottom: 0.35rem;
 }
 
 label {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
+}
+
+/* --- RadioButton styling --- */
+
+.customRadioButton {
+    width: 0.87rem;
+    height: 0.87rem;
+    border: 1.7px solid #8a8888;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 5px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.15rem;
+}
+
+.checkmark {
+    width: 0.51rem;
+    height: 0.51rem;
+    border-radius: 50%;
+    background-color: #d5d5d5;
+    display: none;
+}
+
+.customRadioButton input {
+    display: none;
+}
+
+.customRadioButton input:hover + .checkmark {
+    display: inline-block;
+    background-color: #a5a5a5;
+}
+
+.customRadioButton input:checked + .checkmark {
+    display: inline-block;
+    background-color: #385395;
 }
 
 /* --- Checkbox styling --- */
@@ -137,7 +179,7 @@ label {
 }
 
 .checkbox:checked {
-    background-color: #92C8F7;
+    background-color: #385395;
 }
 
 .checkbox:checked::after {
