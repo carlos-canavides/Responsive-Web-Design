@@ -18,7 +18,7 @@
             <div class="headerInfo">
                 <div>
                     <h1 id="title">Experience Survey</h1>
-                    <p class="text">We would like to know your experience since you decided to join the course. This survey only takes a few minutes of your time. Thank you very much for your participation to help us improve the platform.</p>
+                    <p id="description" class="text">We would like to know your experience since you decided to join the course. This survey only takes a few minutes of your time. Thank you very much for your participation to help us improve the platform.</p>
                 </div>
             </div>
             <div class="headerImage">
@@ -28,25 +28,25 @@
 
         <form id="survey-form">
             <div class="field">
-                <label for="name">Name:</label>
+                <label id="name-label" for="name">Name:</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name" class="inputPersonalData" required/>
             </div>
             <div class="field">
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email" placeholder="Enter your email" class="inputPersonalData" required/>
+                <label id="email-label" for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" class="inputPersonalData" required/>
             </div>
             <div class="field">
-                <label for="age">Age:</label>
-                <input type="text" name="age" id="age" placeholder="Enter your age" class="inputPersonalData" required/>
+                <label id="number-label" for="age">Age:</label>
+                <input type="number" name="age" id="number" min="15" max="80" placeholder="Enter your age" class="inputPersonalData" required/>
             </div>
             <div class="field">
-                <label for="phoneNumber">Phone Number:</label>
-                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter your phone number" class="inputPersonalData" required/>
+                <label id="phone-label" for="phoneNumber">Phone Number:</label>
+                <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Enter your phone number" class="inputPersonalData" required/>
             </div>
 
             <div class="field">
                 <p>Employment Status</p>
-                <select id="" name="" class="" required>
+                <select id="dropdown" name="employment" required>
                   <option disabled selected value>Select your current status</option>
                   <option value="student">Student</option>
                   <option value="job-part">Employed Part Time</option>
@@ -60,7 +60,7 @@
               
             <div class="field">
                 <p>Experience Level</p>
-                <select id="experience" name="experience" class="" required>
+                <select name="experience" required>
                   <option disabled selected value>Select your experience level</option>
                   <option value="junior">Junior</option>
                   <option value="mid">Semi Senior</option>
@@ -159,6 +159,11 @@
                     <input name="prefer" value="additional-courses" type="checkbox" class="checkbox"/>
                     Additional Courses
                 </label>
+            </div>
+
+            <div class="field">
+                <p>Write comments or suggestions</p>
+                <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
             </div>
 
             <div class="field">

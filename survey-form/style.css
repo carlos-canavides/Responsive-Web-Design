@@ -193,6 +193,15 @@ label {
     display: block;
 }
 
+/* --- TextArea Styling --- */
+
+textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 1rem;
+    resize: vertical;
+}
+
 /* --- SubmitButton Styling --- */
 
 .submitButton {
