@@ -243,3 +243,85 @@ label {
 .animatedBorderFooter:hover:after {
     top: 0;
 }
+
+/************************* Settings for displays *******************************/
+
+/* ---------- 1000px Screens ---------- */
+
+@media (max-width: 1000px) {
+    #title {
+        font-size: 2rem;
+    }
+
+    .text {
+        font-size: 0.9rem;
+    }
+
+    form {
+        margin: 2.5rem 4rem;
+    }
+}
+
+/* ---------- 807px Screens ---------- */
+
+@media (max-width: 807px) {
+    #title {
+        font-size: 1.5rem;
+    }
+
+    .text {
+        font-size: 0.8rem;
+    }
+
+    form {
+        margin: 2rem 2rem;
+    }
+}
+
+/* ---------- 768px Screens ---------- */
+
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        margin: 3rem 0;
+    }
+}
+
+/* ---------- 565px Screens ---------- */
+
+@media (max-width: 576px) {
+    body {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    select, label, .inputPersonalData, .text {
+        font-size: 0.8rem;
+    }
+
+    form {
+        margin: 1.5rem 0rem;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    .container {
+        margin: 0;
+        padding: 0;
+        max-width: 540px;
+    }
+
+    header {
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+
+    .field {
+        margin: 0.7rem;
+        padding: 0.3rem;
+    }
+}
