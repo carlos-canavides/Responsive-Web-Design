@@ -86,23 +86,27 @@ form {
     border-radius: 0.2rem;
 }
 
+/* --- Select styling --- */
+
 select {
     display: block;
     width: 100%;
     padding: 0.7rem;
-
     font-size: 0.95rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.2rem;
     color: #585e64;
 }
 
-.checkbox {
-    display: inline-block;
-    margin-right: 0.5rem;
-    min-height: 0.95rem;
-    min-width: 0.95rem;
-    margin-bottom: 0.35rem;
+select:hover {
+    border-radius: 0.4rem;
+    border-color: #92C8F7;
+}
+
+select:focus {
+    border-radius: 0.2rem;
+    border-color: #385395;
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -152,17 +156,20 @@ label {
 /* --- Checkbox styling --- */
 
 .checkbox {
-    appearance: none;
-    background-color: #D5D5D5;
+    min-height: 0.95rem;
+    min-width: 0.95rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.35rem;
     height: 1rem;
     width: 1rem;
     border-radius: 0.2rem;
+    appearance: none;
+    background-color: #D5D5D5;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     outline: none;
-    margin-right: 0.5rem;
 }
 
 .checkbox:after {
