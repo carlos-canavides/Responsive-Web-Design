@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+#title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 8rem 0 2rem 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #2f1e84;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.frontDescription {
+    float: left;
+    width: 60%;
+    padding: 0 4%;
+}
+  
+.frontImage {
+    float: left;
+    width: 40%;
+    padding: 0 4%;
+}
+
+.frontContainer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
