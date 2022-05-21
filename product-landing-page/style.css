@@ -12,7 +12,7 @@ body {
 }
 
 body.dark {
-    --backgroundFront: linear-gradient(135deg, #5744A8 0%,#C24E4D 100% );
+    --backgroundFront: linear-gradient(135deg, #2f1e84 0%,#FF5722 100% );
     --bgColor: hsl(257, 19%, 15%);
     --colorNavItem: #fff;
 }
@@ -63,11 +63,12 @@ header {
     top: 0;
     right: 0;
     left: 0;
-    min-height: 75px;
+    min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
 }
 
 #nav-bar {
@@ -87,6 +88,10 @@ header {
     padding: 0px 10px 0px 10px;
 }
 
+.nav-link:hover {
+    color: #FF5722;
+}
+
 .btn {
     text-transform: uppercase;
     font-weight: 600;
@@ -101,7 +106,7 @@ header {
 }
   
 .btn:hover {
-    background-color: #2f1e84;
+    background-color: #FF5722;
     transition: background-color 1s;
 }
 
@@ -126,7 +131,6 @@ header {
 }
 
 #appImg {
-    src: var(--mockupPhone);
     height: 490px;
     width: 240px;
 }
@@ -139,4 +143,28 @@ header {
     padding: 3rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+}
+
+#why {
+    padding: 15rem 5rem 5rem 5rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%  / 3);
+    margin: 1.5rem;
+    padding: 3rem 2rem 3rem 2rem;
+    border: 1px solid rgba(55, 56, 58, 0.1);
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
 }
