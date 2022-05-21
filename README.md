@@ -10,7 +10,7 @@ The objective of these projects is to put into practice the acquired knowledge o
 
 * Tribute Page: <a href="https://codepen.io/carlosJCs/pen/vYdBgpb" target="_blank">Page</a> | <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page" target="_blank">Requirements</a>
 
-* Tribute Page: <a href="https://codepen.io/carlosJCs/pen/mdXEWqM" target="_blank">Page</a> | <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form" target="_blank">Requirements</a>
+* Survey Form: <a href="https://codepen.io/carlosJCs/pen/mdXEWqM" target="_blank">Page</a> | <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form" target="_blank">Requirements</a>
 
 * Product Landing Page: [Page]() | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
 
