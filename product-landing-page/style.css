@@ -1,9 +1,4 @@
-* {
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    margin: 0;
-    padding: 0;
-}
+/* ------------------- Website Theme ------------------- */
 
 body {
     --backgroundFront: linear-gradient(135deg, #2f1e84 0%,#5d63ed 100% );
@@ -11,6 +6,7 @@ body {
     --colorNavItem: #2f1e84;
     --colorText: #000;
     --borderColorCard: rgba(55, 56, 58, 0.1);
+    --bgCard: #fff;
 }
 
 body.dark {
@@ -19,18 +15,22 @@ body.dark {
     --colorNavItem: #fff;
     --colorText: #fff;
     --borderColorCard: rgba(46, 50, 62);
+    --bgCard: rgba(46, 50, 62);
+}
+
+/* ---------------------- General Styles ---------------------- */
+
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background: var(--bgColor);
     line-height: 1.3;
     color: var(--colorText);
-}
-
-#title {
-    font-size: 2rem;
-    font-weight: 650;
-    margin: 8rem 0 2rem 0;
 }
 
 li {
@@ -49,18 +49,19 @@ img {
     display: block;
 }
 
-.frontDescription {
-    float: left;
-    width: 60%;
-    padding: 0 4%;
-    letter-spacing: 0.3px;
+.text {
+    font-size: 0.95rem;
 }
-  
-.frontImage {
-    float: left;
-    width: 40%;
-    padding: 0 4%;
+
+h2 {
+    margin-bottom: 1.5rem;
 }
+
+h3 {
+    font-size: 1rem;
+}
+
+/* -------------------- Navbar Styling -------------------- */
 
 header {
     padding: 0 5rem;
@@ -99,24 +100,6 @@ header {
     color: #FF5722;
 }
 
-.btn {
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #fff;
-    background-color: #5d63ed;
-    padding: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.1);
-    margin-top: 1rem;
-}
-  
-.btn:hover {
-    background-color: #FF5722;
-    transition: background-color 1s;
-}
-
 .toggle-btn {
     color: hsl(257, 61%, 24%);;
     min-width: 40px;
@@ -137,10 +120,7 @@ header {
     filter: brightness(95%);
 }
 
-#appImg {
-    height: 490px;
-    width: 240px;
-}
+/* ----------------- Front Styling ----------------- */
 
 #front {
     background: var(--backgroundFront);
@@ -151,6 +131,50 @@ header {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
+
+#title {
+    font-size: 2rem;
+    font-weight: 650;
+    margin: 8rem 0 2rem 0;
+}
+
+.frontDescription {
+    float: left;
+    width: 60%;
+    padding: 0 4%;
+    letter-spacing: 0.3px;
+}
+  
+.frontImage {
+    float: left;
+    width: 40%;
+    padding: 0 4%;
+}
+
+#appImg {
+    height: 490px;
+    width: 240px;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    background-color: #5d63ed;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+}
+  
+.btn:hover {
+    background-color: #FF5722;
+    transition: background-color 1s;
+}
+
+/* ----------------- Section Why Styling ----------------- */
 
 #why {
     padding: 8rem 5rem 5rem 5rem;
@@ -175,6 +199,7 @@ header {
     border-radius: 10px;
     border-bottom-left-radius: 0px;
     box-shadow: 0rem 0rem 0.3rem rgba(0, 0, 0, 0.1);
+    background: var(--bgCard);
 }
 
 .icon {
@@ -185,10 +210,58 @@ header {
     margin: 1.5rem 0 1.5rem 0;
 }
 
-.description p {
-    font-size: 0.95rem;
+/* ----------------- Section Features Styling ----------------- */
+
+#features {
+    padding: 5rem 5rem 5rem 5rem;
+    text-align: center;
+}
+  
+#features ol {
+    margin: 0rem 3.5rem;
+}
+  
+#features ol > li {
+    margin-bottom: 1.5rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+  
+#features h3::before {
+    content: "";
+    color: #5d63ed;
+    display: inline-block;
+    margin-left: -2em;
+    width: 2em;
 }
 
-h2 {
-    margin-bottom: 1.5rem;
-  }
+#features h2 {
+    margin-bottom: 3rem;
+}
+
+li p {
+    text-align: justify;
+}
+
+.column-60 {
+    float: left;
+    width: 60%;
+    padding: 0 4%;
+}
+  
+.column-40 {
+    float: left;
+    width: 40%;
+    align-self: center;
+}
+  
+.containerFeatures::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.containerFeatures {
+    justify-content: center;
+    align-items: center;
+}
